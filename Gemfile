@@ -45,6 +45,9 @@ gem 'devise'
 gem 'figaro'
 gem 'activesupport'
 gem 'slim-rails'
+
+gem 'carrierwave'
+
 group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'

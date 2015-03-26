@@ -14,4 +14,11 @@ class UploadsController < ApplicationController
     end
     redirect_to :back, notice: "Uploaded"
   end
+
+  def handle_kitten
+    u = User.create! email: "test@example.com", password: "password"
+    u.kitten = params[:kitten]
+    u.save!
+    redirect_to :back
+  end
 end
