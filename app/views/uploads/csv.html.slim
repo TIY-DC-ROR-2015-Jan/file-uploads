@@ -1,0 +1,5 @@
+h1= "#{User.count} users in system"
+
+= form_tag upload_csv_path, multipart: true do
+  = file_field_tag :users
+  button Upload
